@@ -18,20 +18,27 @@ namespace Tic_Tac_Toe_Game
             InitializeComponent();
         }
 
+        enum enTurnPlayers { Player1 = 1, Player2 = 2};
+
+
+        enTurnPlayers TurnPlayers;
+        
+
+
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Color White = Color.FromArgb(255, 255, 255);
-            Pen pen = new Pen(White);
-            pen.Width = 7;
+            Pen wPen = new Pen(White);
+            wPen.Width = 7;
 
-            pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
-            pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            wPen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
+            wPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
 
-            e.Graphics.DrawLine(pen, 350, 185, 715, 185);
-            e.Graphics.DrawLine(pen, 350, 300, 715, 300);
+            e.Graphics.DrawLine(wPen, 400, 300, 1050, 300);
+            e.Graphics.DrawLine(wPen, 400, 460, 1050, 460);
 
-            e.Graphics.DrawLine(pen, 470, 80, 470, 410);
-            e.Graphics.DrawLine(pen, 600, 80, 600, 410);
+            e.Graphics.DrawLine(wPen, 610, 140, 610, 620);
+            e.Graphics.DrawLine(wPen, 840, 140, 840, 620);
         }
 
         
@@ -51,9 +58,9 @@ namespace Tic_Tac_Toe_Game
             button4.Image = Properties.Resources.X;
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            button7.Image = Properties.Resources.O;
+            button5.Image = Properties.Resources.O;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -61,14 +68,14 @@ namespace Tic_Tac_Toe_Game
             button6.Image = Properties.Resources.X;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
-            button5.Image = Properties.Resources.O;
+            button7.Image = Properties.Resources.O;
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
-            button10.Image = Properties.Resources.X;
+            button8.Image = Properties.Resources.X;
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -76,9 +83,11 @@ namespace Tic_Tac_Toe_Game
             button9.Image = Properties.Resources.O;
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)
         {
-            button8.Image = Properties.Resources.X;
+            button10.Image = Properties.Resources.X;
         }
+
+
     }
 }
