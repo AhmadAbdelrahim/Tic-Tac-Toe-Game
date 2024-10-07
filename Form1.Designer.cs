@@ -43,6 +43,8 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.btnRestartGame = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +64,7 @@
             this.lblTurn.AutoSize = true;
             this.lblTurn.Font = new System.Drawing.Font("Tahoma", 40F, System.Drawing.FontStyle.Bold);
             this.lblTurn.ForeColor = System.Drawing.Color.White;
-            this.lblTurn.Location = new System.Drawing.Point(118, 166);
+            this.lblTurn.Location = new System.Drawing.Point(63, 8);
             this.lblTurn.Name = "lblTurn";
             this.lblTurn.Size = new System.Drawing.Size(154, 65);
             this.lblTurn.TabIndex = 10;
@@ -73,7 +75,7 @@
             this.lblPlayer.AutoSize = true;
             this.lblPlayer.Font = new System.Drawing.Font("Tahoma", 30F, System.Drawing.FontStyle.Bold);
             this.lblPlayer.ForeColor = System.Drawing.Color.Yellow;
-            this.lblPlayer.Location = new System.Drawing.Point(104, 231);
+            this.lblPlayer.Location = new System.Drawing.Point(49, 73);
             this.lblPlayer.Name = "lblPlayer";
             this.lblPlayer.Size = new System.Drawing.Size(183, 48);
             this.lblPlayer.TabIndex = 11;
@@ -84,7 +86,7 @@
             this.lblWinner.AutoSize = true;
             this.lblWinner.Font = new System.Drawing.Font("Tahoma", 40F, System.Drawing.FontStyle.Bold);
             this.lblWinner.ForeColor = System.Drawing.Color.White;
-            this.lblWinner.Location = new System.Drawing.Point(83, 332);
+            this.lblWinner.Location = new System.Drawing.Point(28, 174);
             this.lblWinner.Name = "lblWinner";
             this.lblWinner.Size = new System.Drawing.Size(225, 65);
             this.lblWinner.TabIndex = 12;
@@ -95,7 +97,7 @@
             this.lblProgress.AutoSize = true;
             this.lblProgress.Font = new System.Drawing.Font("Tahoma", 30F, System.Drawing.FontStyle.Bold);
             this.lblProgress.ForeColor = System.Drawing.Color.Yellow;
-            this.lblProgress.Location = new System.Drawing.Point(69, 406);
+            this.lblProgress.Location = new System.Drawing.Point(14, 248);
             this.lblProgress.Name = "lblProgress";
             this.lblProgress.Size = new System.Drawing.Size(253, 48);
             this.lblProgress.TabIndex = 13;
@@ -118,7 +120,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 150);
             this.button2.TabIndex = 24;
-            this.button2.Tag = "";
+            this.button2.Tag = "?";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -138,6 +140,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(200, 150);
             this.button3.TabIndex = 25;
+            this.button3.Tag = "?";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -157,6 +160,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 150);
             this.button4.TabIndex = 26;
+            this.button4.Tag = "?";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -176,6 +180,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(200, 150);
             this.button7.TabIndex = 27;
+            this.button7.Tag = "?";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -195,6 +200,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(200, 150);
             this.button6.TabIndex = 28;
+            this.button6.Tag = "?";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -213,6 +219,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(200, 150);
             this.button5.TabIndex = 29;
+            this.button5.Tag = "?";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -231,6 +238,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(200, 150);
             this.button10.TabIndex = 30;
+            this.button10.Tag = "?";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -249,6 +257,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(200, 150);
             this.button9.TabIndex = 31;
+            this.button9.Tag = "?";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -267,6 +276,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(200, 150);
             this.button8.TabIndex = 32;
+            this.button8.Tag = "?";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -284,6 +294,20 @@
             this.btnRestartGame.TabIndex = 33;
             this.btnRestartGame.Text = "Restart Game";
             this.btnRestartGame.UseVisualStyleBackColor = true;
+            this.btnRestartGame.Click += new System.EventHandler(this.btnRestartGame_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblProgress);
+            this.groupBox1.Controls.Add(this.lblWinner);
+            this.groupBox1.Controls.Add(this.lblPlayer);
+            this.groupBox1.Controls.Add(this.lblTurn);
+            this.groupBox1.Location = new System.Drawing.Point(50, 143);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(285, 333);
+            this.groupBox1.TabIndex = 34;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
             // Form1
             // 
@@ -291,6 +315,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1148, 674);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnRestartGame);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button9);
@@ -301,15 +326,13 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.lblProgress);
-            this.Controls.Add(this.lblWinner);
-            this.Controls.Add(this.lblPlayer);
-            this.Controls.Add(this.lblTurn);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Tic-Tac-Toe Game";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,6 +355,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnRestartGame;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
