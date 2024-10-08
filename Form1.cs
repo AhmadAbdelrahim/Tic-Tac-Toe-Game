@@ -77,7 +77,7 @@ namespace Tic_Tac_Toe_Game
                     lblProgress.Text = "Draw";
                     break;
             }
-            MessageBox.Show("Game Over", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            MessageBox.Show("Game Over", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
         public bool CheckValue(Button btn1, Button btn2, Button btn3)
@@ -163,6 +163,17 @@ namespace Tic_Tac_Toe_Game
                         CheckWinner();
                         break;
                 }
+            }
+            else
+            {
+                MessageBox.Show("Wrong Choice", "Wrong", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            if(GameStatus.PlayCount == 9)
+            {
+                GameStatus.GameOver = true;
+                GameStatus.Winner = enWinner.Draw;
+                EndGame();
             }
         }        
 
