@@ -48,16 +48,19 @@ namespace Tic_Tac_Toe_Game
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            Color White = Color.FromArgb(255, 255, 255);
+            Color White = Color.FromArgb(255, 255, 155);
             Pen wPen = new Pen(White);
             wPen.Width = 7;
-
+            
+            //whitePen.DashStyle = System.Drawomg.Drawing2D.DashStyle.Dash;
             wPen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
             wPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
-
+            
+            //draw Horizental lines
             e.Graphics.DrawLine(wPen, 400, 300, 1050, 300);
             e.Graphics.DrawLine(wPen, 400, 460, 1050, 460);
-
+            
+            //draw Vertical lines
             e.Graphics.DrawLine(wPen, 610, 140, 610, 620);
             e.Graphics.DrawLine(wPen, 840, 140, 840, 620);
         }
