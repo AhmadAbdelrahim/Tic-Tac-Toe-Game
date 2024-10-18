@@ -51,9 +51,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Broadway", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(434, 31);
+            this.label1.Location = new System.Drawing.Point(506, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(545, 61);
+            this.label1.Size = new System.Drawing.Size(676, 76);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tic-Tac-Toe Game";
             // 
@@ -62,9 +63,10 @@
             this.lblTurn.AutoSize = true;
             this.lblTurn.Font = new System.Drawing.Font("Tahoma", 40F, System.Drawing.FontStyle.Bold);
             this.lblTurn.ForeColor = System.Drawing.Color.White;
-            this.lblTurn.Location = new System.Drawing.Point(24, 173);
+            this.lblTurn.Location = new System.Drawing.Point(28, 213);
+            this.lblTurn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTurn.Name = "lblTurn";
-            this.lblTurn.Size = new System.Drawing.Size(154, 65);
+            this.lblTurn.Size = new System.Drawing.Size(191, 81);
             this.lblTurn.TabIndex = 10;
             this.lblTurn.Text = "Turn";
             // 
@@ -73,9 +75,10 @@
             this.lblPlayer.AutoSize = true;
             this.lblPlayer.Font = new System.Drawing.Font("Tahoma", 30F, System.Drawing.FontStyle.Bold);
             this.lblPlayer.ForeColor = System.Drawing.Color.Yellow;
-            this.lblPlayer.Location = new System.Drawing.Point(61, 238);
+            this.lblPlayer.Location = new System.Drawing.Point(71, 293);
+            this.lblPlayer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPlayer.Name = "lblPlayer";
-            this.lblPlayer.Size = new System.Drawing.Size(183, 48);
+            this.lblPlayer.Size = new System.Drawing.Size(231, 60);
             this.lblPlayer.TabIndex = 11;
             this.lblPlayer.Text = "Player 1";
             // 
@@ -84,9 +87,10 @@
             this.lblWinner.AutoSize = true;
             this.lblWinner.Font = new System.Drawing.Font("Tahoma", 40F, System.Drawing.FontStyle.Bold);
             this.lblWinner.ForeColor = System.Drawing.Color.White;
-            this.lblWinner.Location = new System.Drawing.Point(24, 343);
+            this.lblWinner.Location = new System.Drawing.Point(28, 422);
+            this.lblWinner.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWinner.Name = "lblWinner";
-            this.lblWinner.Size = new System.Drawing.Size(225, 65);
+            this.lblWinner.Size = new System.Drawing.Size(279, 81);
             this.lblWinner.TabIndex = 12;
             this.lblWinner.Text = "Winner";
             // 
@@ -95,9 +99,10 @@
             this.lblProgress.AutoSize = true;
             this.lblProgress.Font = new System.Drawing.Font("Tahoma", 30F, System.Drawing.FontStyle.Bold);
             this.lblProgress.ForeColor = System.Drawing.Color.Yellow;
-            this.lblProgress.Location = new System.Drawing.Point(61, 408);
+            this.lblProgress.Location = new System.Drawing.Point(71, 502);
+            this.lblProgress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProgress.Name = "lblProgress";
-            this.lblProgress.Size = new System.Drawing.Size(253, 48);
+            this.lblProgress.Size = new System.Drawing.Size(317, 60);
             this.lblProgress.TabIndex = 13;
             this.lblProgress.Text = "In Progress";
             // 
@@ -113,10 +118,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
             this.button2.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.button2.Location = new System.Drawing.Point(399, 143);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(465, 176);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 150);
+            this.button2.Size = new System.Drawing.Size(233, 185);
             this.button2.TabIndex = 24;
             this.button2.Tag = "?";
             this.button2.UseVisualStyleBackColor = false;
@@ -133,10 +138,10 @@
             this.button3.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.button3.Location = new System.Drawing.Point(628, 143);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(733, 176);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 150);
+            this.button3.Size = new System.Drawing.Size(233, 185);
             this.button3.TabIndex = 25;
             this.button3.Tag = "?";
             this.button3.UseVisualStyleBackColor = true;
@@ -153,10 +158,10 @@
             this.button4.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.button4.Location = new System.Drawing.Point(854, 143);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(996, 176);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 150);
+            this.button4.Size = new System.Drawing.Size(233, 185);
             this.button4.TabIndex = 26;
             this.button4.Tag = "?";
             this.button4.UseVisualStyleBackColor = true;
@@ -173,10 +178,10 @@
             this.button7.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.button7.Location = new System.Drawing.Point(854, 306);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button7.Location = new System.Drawing.Point(996, 377);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 150);
+            this.button7.Size = new System.Drawing.Size(233, 185);
             this.button7.TabIndex = 27;
             this.button7.Tag = "?";
             this.button7.UseVisualStyleBackColor = true;
@@ -193,10 +198,10 @@
             this.button6.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.Black;
             this.button6.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.button6.Location = new System.Drawing.Point(628, 306);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Location = new System.Drawing.Point(733, 377);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 150);
+            this.button6.Size = new System.Drawing.Size(233, 185);
             this.button6.TabIndex = 28;
             this.button6.Tag = "?";
             this.button6.UseVisualStyleBackColor = true;
@@ -212,10 +217,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
             this.button5.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.button5.Location = new System.Drawing.Point(399, 306);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(465, 377);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 150);
+            this.button5.Size = new System.Drawing.Size(233, 185);
             this.button5.TabIndex = 29;
             this.button5.Tag = "?";
             this.button5.UseVisualStyleBackColor = true;
@@ -231,10 +236,10 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
             this.button10.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.button10.Location = new System.Drawing.Point(854, 470);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button10.Location = new System.Drawing.Point(996, 578);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(200, 150);
+            this.button10.Size = new System.Drawing.Size(233, 185);
             this.button10.TabIndex = 30;
             this.button10.Tag = "?";
             this.button10.UseVisualStyleBackColor = true;
@@ -250,10 +255,10 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
             this.button9.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.button9.Location = new System.Drawing.Point(628, 470);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button9.Location = new System.Drawing.Point(733, 578);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 150);
+            this.button9.Size = new System.Drawing.Size(233, 185);
             this.button9.TabIndex = 31;
             this.button9.Tag = "?";
             this.button9.UseVisualStyleBackColor = true;
@@ -269,10 +274,10 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
             this.button8.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.button8.Location = new System.Drawing.Point(399, 470);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Location = new System.Drawing.Point(465, 578);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 150);
+            this.button8.Size = new System.Drawing.Size(233, 185);
             this.button8.TabIndex = 32;
             this.button8.Tag = "?";
             this.button8.UseVisualStyleBackColor = true;
@@ -286,9 +291,10 @@
             this.btnRestartGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestartGame.Font = new System.Drawing.Font("Tahoma", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRestartGame.ForeColor = System.Drawing.Color.Lime;
-            this.btnRestartGame.Location = new System.Drawing.Point(69, 535);
+            this.btnRestartGame.Location = new System.Drawing.Point(42, 626);
+            this.btnRestartGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRestartGame.Name = "btnRestartGame";
-            this.btnRestartGame.Size = new System.Drawing.Size(252, 64);
+            this.btnRestartGame.Size = new System.Drawing.Size(319, 79);
             this.btnRestartGame.TabIndex = 33;
             this.btnRestartGame.Text = "Restart Game";
             this.btnRestartGame.UseVisualStyleBackColor = true;
@@ -296,10 +302,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1148, 674);
+            this.ClientSize = new System.Drawing.Size(1339, 830);
             this.Controls.Add(this.lblProgress);
             this.Controls.Add(this.lblWinner);
             this.Controls.Add(this.btnRestartGame);
@@ -315,7 +321,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "Form1";
             this.Text = "Tic-Tac-Toe Game";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
